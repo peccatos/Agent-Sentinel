@@ -1,0 +1,27 @@
+[package]
+name = "agent-sentinel-claude"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lib]
+name = "agent_sentinel_claude"
+
+[[bin]]
+name = "sentinel-hook"
+path = "src/bin/sentinel_hook.rs"
+
+[dependencies]
+agent-sentinel-core.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+tracing.workspace = true
+anyhow.workspace = true
+dirs = "6"
+
+[dev-dependencies]
+tempfile = "3"

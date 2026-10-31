@@ -1,0 +1,32 @@
+﻿[package]
+name = "sentinel"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "sentinel"
+path = "src/main.rs"
+
+[dependencies]
+agent-sentinel-core.workspace = true
+agent-sentinel-ingest.workspace = true
+agent-sentinel-store.workspace = true
+agent-sentinel-claude.workspace = true
+agent-sentinel-transcript.workspace = true
+agent-sentinel-analyzer.workspace = true
+anyhow.workspace = true
+clap.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+[dev-dependencies]
+tempfile = "3"
+agent-sentinel-claude.workspace = true
+agent-sentinel-ingest.workspace = true
